@@ -1,6 +1,4 @@
 {% extends 'base.html' %}
-
-
 {% block content %} 
 <h3>books list</h3>
 <form hx-get="{% url 'index'%}" hx-target='body' hx-traggier='mousenter'>
@@ -8,7 +6,6 @@
   {{form.as_p}}
     <input type="submit">
 </form>
-
 <hr>
 <h2>Books list </h2>
 <table class="table table-hover">
