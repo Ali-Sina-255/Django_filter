@@ -23,7 +23,6 @@ def index_view(request):
 
 
 class BookAPIView(APIView):
-    
     def get(self, request):
         book = Book.objects.all()
         serializer = BooKModelSerializers(book, many=True)
